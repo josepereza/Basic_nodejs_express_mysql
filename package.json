@@ -1,0 +1,25 @@
+{
+  "name": "node-express-mysql-crud",
+  "version": "1.0.0",
+  "description": "Node crud ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpss2010/Basic-node-express-mysql-ejs-CRUD-operation.git"
+  },
+  "author": "bhanu pratap singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpss2010/Basic-node-express-mysql-ejs-CRUD-operation/issues"
+  },
+  "homepage": "https://github.com/bpss2010/Basic-node-express-mysql-ejs-CRUD-operation#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
