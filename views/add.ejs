@@ -1,0 +1,24 @@
+<%- include('layout/header');%>
+<div class="container">
+  <h2>Add User Details</h2>
+  <form action="/doSaveData" method="post">
+    <div class="form-group">
+      <label for="email">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Phone Number:</label>
+      <input type="text" class="form-control" id="phone_no" placeholder="Enter Phone Number" name="phone_no">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Address:</label>
+      <textarea name="address" rows="4" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+<%- include('layout/footer');%>

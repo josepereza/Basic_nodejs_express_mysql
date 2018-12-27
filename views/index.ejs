@@ -1,31 +1,26 @@
 <%- include('layout/header');%>
 <div class="container">
-  <h2>Bordered Table</h2>
-  <p>The .table-bordered class adds borders to a table:</p>
+  <h2>User Management</h2><span><a href="/addUser">Add User</a></span>
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
+        <th>Name</th>
         <th>Email</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
+      <% resultSet.forEach(function(result){ %>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td><%= result.name %></td>
+        <td><%= result.email %></td>
+        <td><%= result.phone_no %></td>
+        <td><%= result.address %></td>
+        <td><a href="/editUser/<%= result.id %>">Edit</a> | <a href="/deleteUser/<%= result.id %>">Delete</a></td>
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
+      <% });%>
     </tbody>
   </table>
 </div>
