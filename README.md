@@ -5,3 +5,5 @@
 #  2.ExpressJs
 #  3.mysql
 #  4.EJS
+
+I have uploaded sql file also just import that 
