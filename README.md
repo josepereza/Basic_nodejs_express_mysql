@@ -2,8 +2,6 @@
 
 NodeJs CRUD operation.
 
-Hi,this is bhanu pratap singh.
-
 I have created web appliaction i.e CRUD operation using NodeJs,ExpressJs,Mysql,EJS(for templating engine).
 
 ## Getting Started
