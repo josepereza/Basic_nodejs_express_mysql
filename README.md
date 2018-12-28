@@ -48,4 +48,4 @@ Step to follow to created your first CRUD operation using node.
 	
 ## Authors
 
-* **Bhanu Pratap Singh**  - [skype](@bpss20108)	
+* **Bhanu Pratap Singh**  - [skype=> @bhanu20108]
