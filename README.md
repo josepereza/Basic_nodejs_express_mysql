@@ -1,8 +1,8 @@
-Hi,this is bhanu pratap singh.
+<bold>Hi,this is bhanu pratap singh.</bold>
 
-#I have created web appliaction i.e CRUD operation using NodeJs,ExpressJs,Mysql,EJS(for templating engine).
+I have created web appliaction i.e CRUD operation using NodeJs,ExpressJs,Mysql,EJS(for templating engine).
 
-#Step to follow to created your first CRUD operation using node.
+Step to follow to created your first CRUD operation using node.
 
 1.Nodejs has to be installed in your system.
 
@@ -28,5 +28,6 @@ Hi,this is bhanu pratap singh.
 
 10.Once you get port number open browser and run your project using port number like
 	localhost:3200
+	
 	
 	Finally you are running you first NodeJs project.
