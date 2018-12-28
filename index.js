@@ -48,6 +48,15 @@ app.post('/doSaveData',function(req,res){
   });
 });
 
+app.get('/editUser/:id',function(req,res){
+  let userId = req.params.id;
+  'SELECT * FROM `books` WHERE `author` = "David"'
+  var query = connection.query('SELECT * FROM `users` WHERE `id` = "+userId+"', function (error, results, fields) {
+  if (error) throw error;
+    res.render('edit',{userData:results});
+  });
+})
+
 app.listen(port,function(){
   console.log('Server runing in port => '+port);
 })
