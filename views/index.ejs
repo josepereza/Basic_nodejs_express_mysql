@@ -1,6 +1,17 @@
 <%- include('layout/header');%>
 <div class="container">
   <h2>User Management</h2><span><a href="/addUser">Add User</a></span>
+    <% if (msgType=='success') { %>
+        <div class="alert alert-success">
+          <strong>Success!</strong> <%= msg %>.
+        </div>
+    <% } %>
+     <% if (msgType=='error') { %>
+        <div class="alert alert-danger">
+          <strong>Danger!</strong> <%= msg %>.
+        </div>
+    <% } %>
+    
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -18,7 +29,7 @@
         <td><%= result.email %></td>
         <td><%= result.phone_no %></td>
         <td><%= result.address %></td>
-        <td><a href="/editUser/<%= result.id %>">Edit</a> | <a href="/deleteUser/<%= result.id %>">Delete</a></td>
+        <td><a href="/editUser/<%= result.id %>">Edit</a> | <a onClick="return confirm('Are you sure ?')" href="/deleteUser/<%= result.id %>">Delete</a></td>
       </tr>
       <% });%>
     </tbody>
