@@ -47,3 +47,5 @@ Step to follow to created your first CRUD operation using node.
 ## Authors
 
 * **Bhanu Pratap Singh**  - [skype=> @bhanu20108]
+
+![Alt text](Basic_nodejs_express_mysql.png)
